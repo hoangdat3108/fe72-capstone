@@ -29,9 +29,7 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -44,6 +42,13 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         />
+
+        <!-- Popup picture  -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+        />
+
         <link rel="stylesheet" href="../css/gallery.css" />
     </head>
     <body>
@@ -132,6 +137,7 @@
                 </div>
             </nav>
         </header>
+
         <section class="banner">
             <div class="background">
                 <div class="container">
@@ -157,48 +163,108 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g1.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g1.jpg"
+                                    data-caption="Pet 1"
+                                >
+                                    <img src="../img/gallery/g1.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g2.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g2.jpg"
+                                    data-caption="Pet 2"
+                                >
+                                    <img src="../img/gallery/g2.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g3.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g3.jpg"
+                                    data-caption="Pet 3"
+                                >
+                                    <img src="../img/gallery/g3.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item">
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g4.jpg"
+                                    data-caption="Pet 4"
+                                >
+                                    <img src="../img/gallery/g4.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g4.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g5.jpg"
+                                    data-caption="Pet 5"
+                                >
+                                    <img src="../img/gallery/g5.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g5.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g6.jpg"
+                                    data-caption="Pet 6"
+                                >
+                                    <img src="../img/gallery/g6.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item">
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g7.jpg"
+                                    data-caption="Pet 7"
+                                >
+                                    <img src="../img/gallery/g7.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g6.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g8.jpg"
+                                    data-caption="Pet 8"
+                                >
+                                    <img src="../img/gallery/g8.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="item">
-                                <img src="../img/gallery/g7.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="item">
-                                <img src="../img/gallery/g8.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="item">
-                                <img src="../img/gallery/g9.jpg" alt="" />
+                                <a
+                                    data-fancybox="gallery"
+                                    href="../img/gallery/g9.jpg"
+                                    data-caption="Pet 9"
+                                >
+                                    <img src="../img/gallery/g9.jpg" alt="" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -273,11 +339,23 @@
             </div>
         </footer>
         <!-- Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Popup picture  -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script>
+            // Customization example
+            Fancybox.bind('[data-fancybox="gallery"]', {
+                infinite: false,
+            });
+        </script>
 
         <script src="../js/main.js"></script>
     </body>
